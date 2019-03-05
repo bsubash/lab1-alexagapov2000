@@ -1,7 +1,14 @@
 #!/bin/bash
+
+if [ $1 == "-task" ]
+then
+	echo "18. Сравнить две строковые переменные и если первая больше, то вывести сообщение об этом, используя команду ["
+	exit
+fi
+
 if [ "$1" == "$2" ]
 then
-	echo "variables are equal"
+	echo "strings are equal"
 else
-	echo "variables are not equal"
+	echo "strings are not equal"
 fi
